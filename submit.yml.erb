@@ -2,6 +2,7 @@
 batch_connect:
   template: "basic"
 script:
+  accounting_id: "<%= bc_account %>"
   queue_name: "<%= bc_partition %>"
   native:
     - "-N 1"
