@@ -13,9 +13,9 @@ script:
     <%- end -%>
     - "-t"
     - "<%= bc_duration %>"
-    <%- unless bc_num_gpus.blank? or bc_num_gpus.to_i == 0 -%>
-    - "--gres=gpu:<%= bc_num_gpus %>"
-    <%- end -%>
+#    <%- unless bc_num_gpus.blank? or bc_num_gpus.to_i == 0 -%>
+#    - "--gres=gpu:<%= bc_num_gpus %>"
+#    <%- end -%>
     <%- unless bc_reservation.blank? -%>
     - "--reservation=<%= bc_reservation %>"
     <%- end -%>
